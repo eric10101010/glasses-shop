@@ -110,13 +110,11 @@
 }
 /*--區塊三--經典--*/
 .classic {
+    margin-top: 60px;
     margin-bottom: 80px;
     @include pad{
-        margin-bottom: 56px;
-    }
-    @include pad{
         padding: 0 39px;
-        padding-top: 40px;
+        margin-top: 40px;
         margin-bottom: 48px;
     }
     @include mobile{

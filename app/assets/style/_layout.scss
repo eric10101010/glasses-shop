@@ -1,7 +1,6 @@
 .container{
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0;
 }
 .row{
     @include mobile{
@@ -17,6 +16,7 @@
   &Box {
       display: flex;
       justify-content: space-between;
+      padding: 0;
       @include mobile{
         display: block;
     }
