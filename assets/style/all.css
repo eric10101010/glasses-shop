@@ -48,8 +48,7 @@ table {
 
 .container {
   max-width: 1140px;
-  margin: 0 auto;
-  padding: 0; }
+  margin: 0 auto; }
 
 @media (max-width: 767px) {
   .row {
@@ -67,7 +66,8 @@ table {
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    padding: 0; }
     @media (max-width: 767px) {
       .headerBox {
         display: block; } }
@@ -479,14 +479,12 @@ a {
 
 /*--區塊三--經典--*/
 .classic {
+  margin-top: 60px;
   margin-bottom: 80px; }
   @media (max-width: 992px) {
     .classic {
-      margin-bottom: 56px; } }
-  @media (max-width: 992px) {
-    .classic {
       padding: 0 39px;
-      padding-top: 40px;
+      margin-top: 40px;
       margin-bottom: 48px; } }
   @media (max-width: 767px) {
     .classic {
