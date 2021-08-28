@@ -1,0 +1,176 @@
+.locate{
+    margin-bottom: 128px;
+    @include pad{
+        margin-bottom: 76px;
+        padding: 0 39px;
+    }
+    @include mobile{
+        margin-bottom: 40px;
+        padding: 0 15px;
+    }
+    &Title{
+        margin-top: 96px;
+        margin-bottom: 60px;
+        text-align-last: left;
+        padding-left: 16px;
+        font-size: $text-4xl;
+        line-height:67px;
+        font-weight: bold;
+        border-left: 8px solid #9F1213;
+        @include mobile{
+            font-size: $text-2l;
+            border-left: 4px solid #9F1213;
+            padding-left: 8px;
+            line-height: 40px;
+            margin-top: 36px;
+            margin-bottom: 24px;
+        }
+    }
+    &Shop{
+        margin-bottom: 32px;
+        @include pad{
+            margin-bottom: 24px;
+        }
+        @include mobile{
+            display: flex;
+        }
+    }
+    &Select{
+        font-size: $text-l;
+        line-height: 30px;
+        padding-right: 20px;
+        @include pad{
+            font-size: $text-base;
+        }
+        @include mobile{
+            font-size: $text-s;
+            line-height: 30px;
+            padding-right: 12px;
+        }
+    }
+    &Area {
+        padding: 8px 19px;
+        width: 324px;
+        height: 45px;
+        border: 1px solid #CED4DA;
+        @include mobile{
+            width: 277px;
+            height: 36px;
+            font-size: $text-s;
+            line-height: 24px;
+        }
+    }
+}
+.shop{
+    &Detail {
+        padding: 20px 0;
+    }
+    &DetailItem{
+        width: 40%;
+        @include pad{
+            width: 100%;
+            margin-bottom: 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        @include mobile{
+            flex-direction: column;
+            margin-bottom: 16px;
+        }
+    }
+    &DetailImg{
+        height: 224px;
+        img{
+            width: 445px;; 
+            height: 100%;   
+        }
+        @include pad{
+            width: 48%;
+            height: 164px;
+        }
+        @include mobile{
+            width: 100%;
+        }
+    }
+    &Item{
+        margin-bottom: 32px;
+        @include pad{
+            margin-bottom: 20px;
+        }
+        @include mobile{
+            margin-bottom: 16px;
+        }
+    }
+    &TextBox{
+        width: 445px;
+        @include pad{
+            width: 48%;
+        }
+        @include mobile{
+            width: 100%;
+        }
+    }
+    &Title {
+        font-size: $text-l;
+        line-height: 36px;
+        color: #212529;
+        padding: 12px 24px;
+        border: 1px solid #00000020;
+        font-weight: bold;
+        @include mobile{
+            font-size: $text-base;
+            line-height: 24px;
+        }
+    }
+    &Content{
+        border: 1px solid #00000020;
+        font-size: $text-base;
+        line-height: 30px;
+        padding: 0px 28px;
+        padding-top: 16px;
+        padding-bottom: 8px;
+        color: #212529;
+        @include mobile{
+            font-size: $text-s;
+            line-height: 21px;
+            padding: 0px 26px;
+            padding-top: 16px;
+            padding-bottom: 8px;
+        }
+        span{
+            padding-right: 10px;
+        }
+    }
+    &Text{
+        padding-bottom: 8px;
+    }
+        &Box {
+        margin-top: 32px;
+        margin-bottom: 160px;
+        @include pad{
+            margin-bottom: 96px;
+        }
+        @include mobile{
+            margin-bottom: 56px;
+        }
+    }
+    &Map{
+        width: 57%;
+        @include pad{
+            width: 100%;
+        }
+        @include mobile{
+            width: 100%;
+        }
+        iframe{
+            height: 436px;
+            @include pad{
+                height: 422px;
+            }
+            @include mobile{
+                height: 211px;
+            }
+        }
+    }
+}

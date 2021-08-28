@@ -1,0 +1,408 @@
+.blog{
+    &Main {
+        display: flex;
+        justify-content: space-between;
+        @include pad{
+            padding: 0 39px;
+        }
+        @include mobile{
+            padding: 0px
+        }
+    }
+    &Article{
+        @include pad{
+            padding: 0 39px;
+        }
+        @include mobile{
+            margin-bottom: 40px;
+            padding: 0;
+        }
+    }
+    &Title {
+        margin-top: 52px;
+        margin-bottom: 60px;
+        font-size: $text-4xl;
+        line-height: 80px;
+        font-weight: bold;
+        padding-left: 16px;
+        border-left: 8px solid #9F1213;
+        @include pad{
+            border-left: 4px solid #9F1213;
+            margin-top: 32px;
+            margin-bottom: 40px;
+            line-height: 55px;
+        }
+        @include mobile{
+            font-size: $text-2l;
+            line-height: 40px;
+            padding-left: 8px;
+            margin: 28px 0;
+        }
+    }
+    &Navbar{
+        background-color: $secondary;
+        @include mobile{
+            display: none;
+        }
+    }
+    &MenuBox{
+        a{
+            padding-top: 12px;
+            padding-bottom: 14px;
+            padding-right: 48px;
+            color: $white;
+            font-size: $text-m;
+            line-height: 24px;
+        }
+    }
+    &Breadcrumb{
+        a{
+            font-size: $text-base;
+            color: $black;
+            line-height: 24px;
+            padding: 8px 0;
+        }
+        a:hover{
+            color: $primary;
+            transition:  .5s;
+        }
+        @include pad{
+            padding: 8px 39px;
+        }
+        @include mobile{
+            padding: 8px 0;
+            font-size: $text-s;
+            line-height: 21px;
+        }
+    }
+    &TitleTag{
+        @include pad{
+            padding: 0 39px;
+        }
+        @include mobile{
+            padding: 0px;
+        }
+        a{
+            font-size: $text-l;
+            line-height: 36px;
+            color: $primary;
+            font-weight: bold;
+            padding-right: 16px;
+            @include mobile{
+                font-size: $text-s;
+                line-height: 19px;
+            }
+        }
+    }
+    &DeatilTitle h1{
+        font-size: $text-4xl;
+        font-weight: bold;
+        line-height: 95px;
+        color: $secondary;
+        @include mobile{
+            font-size: $text-m;
+            line-height: 30px;
+        }
+    }
+    &DeatilTitle{
+        margin-bottom: 24px;
+        @include mobile{
+            margin-bottom: 20px;
+        }
+    }
+    &DeatilTitle h2{
+        font-size: $text-2l;
+        font-weight: bold;
+        line-height: 42px;
+        @include mobile{
+            font-size: $text-s;
+            line-height: 21px;
+        }
+    }
+    &DeatilTitle span{
+        font-size: $text-base;
+        color: #6C6C6C;
+        @include mobile{
+            font-size: $text-s;
+            line-height: 21px;
+        }
+    }
+    &Detail{
+        width: 75%;
+        @include pad{
+            width: 74%;
+        }
+        @include mobile{
+            width: 100%;
+        }
+        img{
+            width: 100%;
+            @include mobile{
+                height: 225px;
+            }
+        }
+    }
+    &DetailText p{
+        font-size: $text-m;
+        line-height: 30px;
+        padding-top: 24px;
+        padding-bottom: 40px;
+        color: #0A0A0A;
+        opacity: 0.6;
+        @include pad{
+            font-size: $text-base;
+            line-height: 24px;
+            padding-top: 16px;
+            padding-bottom: 24px;
+        }
+        @include mobile{
+            padding-bottom: 20px;
+        }
+    }
+    &MainTag{
+        width: 23%;
+        @include pad{
+            width: 22%;
+        }
+    }
+    &MobileTag{
+        @include mobile{
+            margin-bottom: 56px;
+        }
+        span{
+            @include mobile{
+                font-size: $text-m;
+                color: $primary;
+                font-weight: bold;
+                padding-left: 2px;
+                font-size: $text-m;
+                line-height: 42px;
+            }
+        }
+    }
+    &DetailIcon{
+        padding-bottom: 20px;
+        @include pad{
+            padding: 5px 39px 20px 39px;
+        }
+        @include mobile{
+            padding: 0px;
+            padding-bottom: 16px;
+        }
+        p{
+            font-size: $text-m;
+            line-height: 30px;
+            font-weight: bold;
+            padding-right: 12px;
+        }
+        a{
+            padding: 0 8px;
+        }
+    }
+    &DetailPage{
+        margin-bottom: 160px;
+        @include pad{
+            padding: 0 39px;
+            margin-bottom: 96px;
+        }
+        @include mobile{
+            padding: 0px;
+            margin-bottom: 30px;
+        }
+        a{
+            padding-top: 24px;
+            font-size: 19px;
+            line-height: 30px;
+            color: $black;
+            @include mobile{
+                padding-top: 0px;
+                font-size: $text-s;
+                line-height: 30px;
+            }
+        }
+    }
+    &DetailPageBox{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid $gray-400;
+        @include mobile{
+            flex-wrap: wrap;
+        }
+    }
+}
+.article{
+    &Box{
+        margin-bottom: 108px;
+        position: relative;
+        @include pad{
+            margin-bottom: 76px;
+        }
+        @include mobile{
+            margin-bottom: 20px;
+        }
+    }
+    &More{
+        position:absolute;
+        bottom: 0;
+        right: 0;
+        @include pad{
+            text-transform:lowercase;
+        }
+    }
+    &Content{
+        h2{
+            font-size: $text-xl;
+            line-height: 63px;
+            color: $secondary;
+            font-weight: bold;
+            @include pad{
+                font-size: $text-m;
+                line-height: 29px;
+            }
+            @include mobile{
+                padding-top: 8px;
+            }
+        }
+        p{
+            font-size: $text-m;
+            line-height: 30px;
+            color: #555555;
+            padding-top: 24px;
+            @include pad{
+                font-size: $text-s;
+                line-height: 21px;
+                padding-top: 32px;
+            }
+            @include mobile{
+                display: none;
+            }
+        }
+        a{
+            font-size: $text-2xl;
+            line-height: 54px;
+            color: $secondary;
+            font-weight: bold;
+            @include pad{ 
+                // display: none;
+                font-size: $text-s;
+                line-height: 21px;
+                line-height: 21px;
+                color: #555555;
+            }
+        }
+    }
+    &Item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &Title{
+        display: flex;
+        justify-content: space-between;
+        h3{
+            font-size: $text-m;
+            line-height: 30px;
+            font-weight: bold;
+            @include pad{
+                font-size: $text-base;
+                line-height: 30px;
+            }
+        }
+        span{
+            font-size: $text-base;
+            line-height: 24px;
+            opacity: 0.7;
+            @include pad{
+                font-size: $text-s;
+            }
+        }
+    }
+    &Img{
+        width: 58%;
+        @include pad{
+            width: 48%;
+        }
+        @include mobile{
+            width: 100%;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    &Content{
+        width: 40%;
+        @include pad{
+            width: 48%;
+        }
+        @include mobile{
+            width: 100%;
+        }
+    }
+}
+.searchIcon{
+    color: $white;
+}
+.breadActive{
+    a{
+        color: $primary;
+    }
+}
+.blogMainTag {
+    padding-top: 82px;
+    @include mobile{
+        display: none;
+    }
+    span{
+        padding-left: 12px;
+        font-size: $text-2l;
+        color: $primary;
+        line-height: 42px;
+        font-weight: bold;
+        @include pad{
+            padding-left: 2px;
+            font-size: $text-m;
+            line-height: 42px;
+        }
+    }
+}
+.tagBox {
+    padding-top: 9px;
+    display: flex;
+    flex-wrap: wrap;
+    @include pad{
+        padding-top: 8px;
+    }
+    a{
+        color: $primary;
+        font-size: $text-l;
+        line-height: 36px;
+        font-weight: bold;
+        padding-right: 24px;
+        padding-bottom: 8px;
+        @include pad{
+            font-size: $text-base;
+            line-height: 36px;
+            padding-right: 16px;
+            padding-bottom: 0;
+        }
+    }
+}
+.prev , .next{
+    padding-right: 12px;
+    @include mobile{
+        padding-right: 4px;
+    }
+}
+.blogPrevBtn , .blogNextBtn{
+    display: flex;
+    align-items: center;
+}
+.blogPrevBtn {
+    margin-top: 10px;
+}
+.blogNextBtn{
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row-reverse;
+}

@@ -1,0 +1,218 @@
+/*區塊一*/
+.catelog {
+    &Item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #DCDCDC;
+        a{
+            color: $black;
+            font-size: $text-xl;
+            line-height: 50px;
+            font-weight: bold;
+            padding: 27px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @include pad{
+            a{
+                font-size: $text-l;
+                line-height: 50px;
+                padding: 0px 0px;
+            }
+        }
+
+        @include mobile{
+            a{
+                font-size: $text-s;
+                line-height: 23px;
+            }
+        }
+    }
+    &Item:hover{
+        border-bottom: 8px solid $primary;
+    }
+    &Active{
+        border-bottom: 8px solid $primary;
+        @include mobile{
+            border-bottom: 4px solid $primary;
+        }
+    }
+}
+/*區塊二*/
+.banner {
+    &Box {
+        margin-bottom: 80px;
+        @include pad{
+            margin-bottom: 52px;
+        }
+        @include mobile{
+            margin-bottom: 32px;
+        }
+    }
+
+}
+.productBanner{
+    width: 50%;
+    height: 304px;
+    @include mobile{
+        height: 148px;
+    }
+}
+.bannerOne {
+    background:url('../images/banner-1.png') no-repeat 50% 0%;
+    background-size: cover;
+}
+.bannerTwo {
+    background: url('../images/banner-2.png') no-repeat 0% 0%;
+    background-size: cover;
+}
+.bannerSunglassesOne {
+    background:url('../images/banner-3.png') no-repeat 50% 0%;
+    background-size: cover;
+}
+.bannerSunglassesTwo {
+    background: url('../images/product-2-color.png') no-repeat 50% 0%;
+    background-size: cover;
+}
+/*區塊三*/
+.product{
+    &Title{
+        margin-bottom: 40px;
+        @include pad{
+            margin-bottom: 32px;
+        }
+        @include mobile{
+            margin-bottom: 20px;
+        }
+        h1{
+            font-size: $text-3xl;
+            line-height: 63px;
+            font-weight: bold;
+            @include mobile{
+                font-size: $text-m;
+                line-height: 26px;
+            }
+        }
+        h2{
+            font-size: $text-xl;
+            line-height: 48px;
+            font-weight: bold;
+            @include mobile{
+                font-size: $text-base;
+                line-height: 24px;
+            }
+        }
+    }
+    &Sunglasses {
+        margin-bottom: 56px;
+        @include pad{
+            margin-bottom: 24px;
+            padding: 0 39px;
+        }
+        @include mobile{
+            margin-bottom: 8px;
+            padding: 0 15px;
+        }
+    }
+    &Card{
+        margin-bottom: 104px;
+        @include pad{
+            margin-bottom: 72px;
+        }
+        @include mobile{
+            margin-bottom: 32px;
+        }
+        img{
+            width: 100%;
+            height: 224px;
+            object-fit: cover;
+        }
+    }
+    &Item{
+        margin-bottom: 104px;
+        img{
+            width: 100%;
+            height: 164px;
+            object-fit: cover;
+        }
+        @include pad{
+            margin-bottom: 72px;  
+        }
+        @include mobile{
+            margin-bottom: 32px;  
+        }
+    }
+    &Contnet{
+        font-size: $text-l;
+        line-height: 30px;
+        @include mobile{
+            font-size: $text-base;
+        }
+    }
+    &Price{
+        color: $primary;
+        font-weight: bold;
+        @include pad{
+            font-size: $text-l;
+        }
+        @include mobile{
+            font-size: $text-base;
+        }
+    }
+}
+.colorBox{
+    display: flex;
+}
+.color {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+}
+.colorOne {
+    background-color: #5F3E2D;
+    margin-right: 8px;
+}
+.colorTwo {
+    background-color: #B75929;
+} 
+/*區塊四*/
+.pageBox {
+    margin-bottom: 160px;
+    @include pad{
+        margin-top: 5px;
+        margin-bottom: 96px;
+    }
+    @include mobile{
+        margin-top: 0;
+        margin-bottom: 56px;
+    }
+}
+.page{
+    border: 1px solid #555555;
+    padding: 10px 24px;
+    color: #555555;
+    &:hover{
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+    @include mobile{
+        padding: 10px 12px;
+    }
+}
+.pageActive{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.nextBtn{
+    background-color: #F2F2F2;
+}
+.sunglassesPage{
+    display: none;
+}
+.material-icons{
+    @include mobile{
+        font-size: 14px;
+    }
+}
