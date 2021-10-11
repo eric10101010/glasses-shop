@@ -153,13 +153,8 @@ table {
 .footer {
   background: #AA0601;
   color: #ffffff;
-  padding: 24px 0 40px; }
-  @media (max-width: 992px) {
-    .footer {
-      padding: 28px 0 32px; } }
-  @media (max-width: 767px) {
-    .footer {
-      padding: 24px 0; } }
+  padding-top: 44px;
+  padding-bottom: 39px; }
   .footerBlock {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -199,8 +194,8 @@ table {
     margin-bottom: 16px; }
     @media (max-width: 992px) {
       .footerMenu {
-        margin-top: 32px;
-        margin-bottom: 0; } }
+        margin-top: 38px;
+        margin-bottom: 18px; } }
     @media (max-width: 767px) {
       .footerMenu {
         display: none; } }
@@ -225,6 +220,7 @@ table {
 @media (max-width: 767px) {
   .footer {
     padding: 0 15px;
+    padding-top: 25px;
     padding-bottom: 24px; } }
 
 .footerContact {
@@ -281,7 +277,7 @@ table {
   padding: 10px 20px; }
   @media (max-width: 992px) {
     .socialLink {
-      margin-top: 32px;
+      margin-top: 0px;
       padding: 0px 12px; } }
   @media (max-width: 767px) {
     .socialLink {
@@ -313,10 +309,13 @@ table {
   .copyrightText {
     font-size: 16px;
     line-height: 1.5; }
+    @media (max-width: 992px) {
+      .copyrightText {
+        padding-bottom: 32px; } }
     @media (max-width: 767px) {
       .copyrightText {
         font-size: 14px;
-        margin-bottom: 8px; } }
+        padding-bottom: 8px; } }
 
 .privacyMenu {
   width: 17%;
@@ -368,6 +367,10 @@ img {
 a {
   text-decoration: none;
   display: block; }
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 /*--區塊一banner--*/
 .banner {
@@ -1457,6 +1460,9 @@ a {
   @media (max-width: 992px) {
     .articleMore {
       text-transform: lowercase; } }
+  @media (max-width: 767px) {
+    .articleMore {
+      display: none; } }
 
 .articleContent h2 {
   font-size: 32px;
